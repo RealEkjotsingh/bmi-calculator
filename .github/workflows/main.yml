@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  
+      - master  # change this to your default branch name if it's not 'main'
 
 jobs:
   deploy:
@@ -15,16 +15,16 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'  
+        node-version: '14'  # you can specify another version if you want
 
     - name: Install Dependencies
-      run: yarn install  
+      run: yarn install  # or 'npm install' if you're not using yarn
 
     - name: Build Project
-      run: yarn build 
+      run: yarn build  # or 'npm run build' if you're not using yarn
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.TOKEN_GITHUB }}
-        publish_dir: ./dist  
+        publish_dir: ./dist  # this directory should contain your built assets, update if it's different
