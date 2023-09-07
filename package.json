@@ -2,7 +2,7 @@
   "name": "bmi-calculator",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://gayathrirajendran.github.io/bmi-calculator",
+  "homepage": "https://RealEkjotsingh.github.io/bmi-calculator",
   "type": "module",
   "scripts": {
     "dev": "vite",
