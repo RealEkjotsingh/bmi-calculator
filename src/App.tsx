@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-    <h2>BMI calculator</h2>
+    <h2>BMI calculator react app Deployed by <b>Ekjot Singh</b> </h2>
     <BmiCalculator></BmiCalculator>
     </>
   )
